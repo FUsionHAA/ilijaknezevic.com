@@ -1,0 +1,48 @@
+.mobHeader {
+    width: 120vw;
+    margin-left: -10vw;
+    margin-top: 1.5rem;
+    height: 45vh;
+    background-color: rgb(83, 194, 228);
+    border-bottom-right-radius: 50% 40%;
+    border-bottom-left-radius: 50% 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.mobHeader>h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.mobHeader>p {
+    font-size: 1.4rem;
+    word-wrap: break-word;
+    margin: -1rem 2rem 0 2rem;
+    padding: 1rem;
+}
+
+.mobHeader>div {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 370px) {
+    .mobHeader>h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .mobHeader>h2 {
+        font-size: 1.6rem;
+    }
+
+    .mobHeader>p {
+        font-size: 1.2rem;
+    }
+
+    .mobHeader>div {
+        transform: scale(1.1);
+    }
+}

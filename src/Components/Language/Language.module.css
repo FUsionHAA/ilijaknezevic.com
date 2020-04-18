@@ -1,0 +1,16 @@
+.lang:hover {
+    cursor: pointer;
+}
+
+.english,
+.serbian {
+    filter: grayscale(100%) opacity(0.7);
+    fill: #636161;
+    transition: var(--transition-speed);
+}
+
+.english:hover,
+.serbian:hover {
+    filter: grayscale(0%) opacity(1);
+    fill: var(--primary);
+}

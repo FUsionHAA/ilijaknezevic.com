@@ -1,0 +1,86 @@
+.container {
+    text-align: left;
+    margin: 3rem auto;
+    background-color: rgba(248, 250, 252, 0.7);
+}
+
+.container > div {
+    width: 70vw;
+    margin: auto;
+    padding: 4rem;
+    height: fit-content;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: .3rem;
+    margin: 1rem 0;
+    padding-left: 2.2rem;
+}
+
+.title::before {
+    left: 0;
+    top: 8px;
+    content: '';
+    width: 21px;
+    height: 1px;
+    position: absolute;
+    background-color: rgba(19,46,71,0.5);
+}
+
+.text {
+    font-size: 2rem;
+    padding: 1rem 0;
+    position: relative;
+    line-height: 2.6rem;
+    letter-spacing: .1rem;
+}
+
+.text::before {
+    top: 0;
+    left: 0;
+    width: 9px;
+    content: '';
+    height: 100%;
+    margin-left: -50px;
+    position: absolute;
+    background-color: var(--primary);
+}
+
+@media (max-width: 670px) {
+    .container {
+        margin: auto;
+    }
+
+    .title {
+        margin-top: -1rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .text {
+        font-size: 1.8rem;
+        margin-right: -3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .title {
+        margin: 0 -2rem;
+    } 
+    
+    .text {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        margin: 0 -2rem;
+    }
+
+    .text::before {
+        content: none;
+    }
+}
